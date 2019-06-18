@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const Johtaja = ({node})=>{
   return (
     <li>
-      <Link to={node.name}>{node.name}</Link>
+      <Link to={"johtajat/" + node.name.replace(/"[^"]*" /g, "")}>{node.name}</Link>
     </li>
   )
 }
